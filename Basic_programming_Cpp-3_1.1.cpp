@@ -30,9 +30,9 @@ int main(int argc, char** argv)
 
 		fout << M << endl;
 		tmp_M = arr_1[M - 1];
-		for (int i = M - 1; i >= 0; i--)
+		for (int i = M - 2; i >= 0; i--)
 		{
-			arr_1[i] = arr_1[i - 1];
+			arr_1[i + 1] = arr_1[i];
 		}
 		arr_1[0] = tmp_M;
 		for (int i = 0; i < M; i++)
